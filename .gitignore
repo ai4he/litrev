@@ -1,0 +1,12 @@
+# Build artifacts
+*.aux
+*.log
+*.out
+*.toc
+*.fdb_latexmk
+*.fls
+*.pdf
+
+# Generated batches and temp data
+out/
+tmp/
