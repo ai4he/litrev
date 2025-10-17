@@ -21,6 +21,7 @@ These notes capture the user’s requirements so the task can be resumed at any 
      2. Determine relevance: keep papers contributing algorithms, datasets, or evaluations at the intersection of mathematics and large language models. Skip general surveys or off-topic works unless they add direct value to the survey scope.
      3. Check whether each relevant paper already exists in `references.bib`. If missing, append a clean BibTeX entry to `changes.bib` (ASCII only, sorted keys optional).
      4. Update `main.tex` with concise discussion of the new work, citing the new BibTeX key via `\cite{...}`.
+     5. Record decisions in `papers.csv` by updating the `SELECTED` column (`1` for included papers, `0` for screened-out papers, blank for batches not yet reviewed).
    - Continue sequential batches until all `papers.csv` entries (currently 2068) are reviewed.
 
 4. **Git Workflow**
