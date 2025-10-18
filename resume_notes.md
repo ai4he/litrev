@@ -1,31 +1,31 @@
 ### SLR status (Math+LLM)
-- Papers processed: rows 1-100 (batches 1-5). Relevant works integrated into `main.tex` and `changes.bib`.
-- Next batch: rows 101-120 (batch 6).
+- Papers processed: rows 1-120 (batches 1-6). Relevant works integrated into `main.tex` and `changes.bib`.
+- Next batch: rows 121-140 (batch 7).
 
-### Pending screening (rows 101-120)
-101. Numerical reasoning in NLP: Challenges, innovations, and strategies for handling mathematical equivalency — https://repository.kulib.kyoto-u.ac.jp/dspace/bitstream/2433/285863/1/djohk00840.pdf
-102. Tora: A tool-integrated reasoning agent for mathematical problem solving — https://arxiv.org/abs/2309.17452
-103. Mathcoder: Seamless code integration in LLMs for enhanced mathematical reasoning — https://arxiv.org/abs/2310.03731
-104. Olapa-MCoT: Enhancing the Chinese Mathematical Reasoning Capability of LLMs — https://arxiv.org/abs/2312.17535
-105. Reasoning arithmetic word problems entailing implicit relations based on the chain-of-thought model — https://researchers.mq.edu.au/en/publications/reasoning-arithmetic-word-problems-entailing-implicit-relations-b
-106. Rewriting Math Word Problems with Large Language Models — https://eric.ed.gov/?id=ED655931
-107. GPT can solve mathematical problems without a calculator — https://arxiv.org/abs/2309.03241
-108. From good to great: Improving math reasoning with tool-augmented interleaf prompting — https://arxiv.org/abs/2401.05384
-109. FinanceMath: Knowledge-intensive math reasoning in finance domains — https://arxiv.org/abs/2311.09797
-110. GeomVerse: A systematic evaluation of large models for geometric reasoning — https://arxiv.org/abs/2312.12241
-111. A symbolic framework for evaluating mathematical reasoning and generalisation with transformers — https://arxiv.org/abs/2305.12563
-112. Tuning ChatGPT mathematical reasoning limitations and failures with process supervision — https://www.noveltyjournals.com/upload/paper/TUNING%20CHATGPT%20MATHEMATICAL-29082023-1.pdf
-113. Turning large language models into cognitive models — https://arxiv.org/abs/2306.03917
-114. Chain-of-thought reasoning in tabular language models — https://aclanthology.org/2023.findings-emnlp.734/
-115. Fill in the blank: Exploring and enhancing LLM capabilities for backward reasoning in math word problems — https://arxiv.org/abs/2310.01991
-116. Large language models cannot self-correct reasoning yet — https://arxiv.org/abs/2310.01798
-117. Mathematical capabilities of ChatGPT — https://proceedings.neurips.cc/paper_files/paper/2023/hash/58168e8a92994655d6da3939e7cc0918-Abstract-Datasets_and_Benchmarks.html
-118. Making large language models better reasoners with alignment — https://arxiv.org/abs/2309.02144
-119. Logic-LM: Empowering large language models with symbolic solvers for faithful logical reasoning — https://arxiv.org/abs/2305.12295
-120. Large language models are versatile decomposers: Decomposing evidence and questions for table-based reasoning — https://dl.acm.org/doi/abs/10.1145/3539618.3591708
+### Pending screening (rows 121-140)
+121. A mechanistic interpretation of arithmetic reasoning in language models using causal mediation analysis — https://arxiv.org/abs/2305.15054
+122. Jiuzhang 2.0: A unified Chinese pre-trained language model for multi-task mathematical problem solving — https://dl.acm.org/doi/abs/10.1145/3580305.3599850
+123. Democratizing reasoning ability: Tailored learning from large language model — https://arxiv.org/abs/2310.13332
+124. Llemma: An open language model for mathematics — https://arxiv.org/abs/2310.10631
+125. UniMath: A foundational and multimodal mathematical reasoner — https://aclanthology.org/2023.emnlp-main.440/
+126. ChatCoT: Tool-augmented chain-of-thought reasoning on chat-based large language models — https://arxiv.org/abs/2305.14323
+127. MAmmoTH: Building math generalist models through hybrid instruction tuning — https://arxiv.org/abs/2309.05653
+128. Plan-and-Solve Prompting: Improving zero-shot chain-of-thought reasoning by large language models — https://arxiv.org/abs/2305.04091
+129. Evaluation of basic mathematical abilities of neural networks — https://thesis.unipd.it/handle/20.500.12608/52790
+130. AI for mathematics: A cognitive science perspective — https://arxiv.org/abs/2310.13021
+131. Evaluation of Large Scale Language Models on Solving Math Word Problems with Difficulty Grading — https://ieeexplore.ieee.org/abstract/document/10391224/
+132. MAF: Multi-aspect feedback for improving reasoning in large language models — https://arxiv.org/abs/2310.12426
+133. Query and response augmentation cannot help out-of-domain math reasoning generalization — https://openreview.net/forum?id=N1hk66bz5m
+134. MuggleMath: Assessing the impact of query and response augmentation on math reasoning — https://arxiv.org/abs/2310.05506
+135. PAL: Program-Aided Language Models — https://proceedings.mlr.press/v202/gao23f
+136. How does GPT-2 compute greater-than?: Interpreting mathematical abilities in a pre-trained language model — https://proceedings.neurips.cc/paper_files/paper/2023/hash/efbba7719cc5172d175240f24be11280-Abstract-Conference.html
+137. Adapting large language models for education: Foundational capabilities, potentials, and challenges — https://www.academia.edu/download/119620398/2401.08664.pdf
+138. Automatic model selection with large language models for reasoning — https://arxiv.org/abs/2305.14333
+139. Glore: Evaluating logical reasoning of large language models — https://arxiv.org/abs/2310.09107
+140. Can large language models explain themselves? A study of LLM-generated self-explanations — https://arxiv.org/abs/2310.11207
 
 ### Actions when resuming
-1. Run `python3 scripts/process_batch.py --batch 6 --emit json` to fetch abstracts for rows 101-120.
-2. Evaluate relevance (math+LLM algorithmic/dataset contributions). For relevant papers, check `references.bib`; add missing BibTeX entries to `changes.bib` and integrate citations into `main.tex`.
-3. Continue sequential batches until all 2068 papers are reviewed (current progress: 100 processed).
+1. Run `python3 scripts/process_batch.py --batch 7 --emit json` to fetch abstracts for rows 121-140.
+2. Evaluate relevance (math+LLM algorithmic/dataset contributions). For relevant papers, check `references.bib`; add missing BibTeX entries to `changes.bib`, integrate citations into `main.tex`, and set the `SELECTED` flag in `papers.csv` (`1` for included, `0` otherwise).
+3. Continue sequential batches until all 2068 papers are reviewed (current progress: 120 processed).
 4. Maintain Overleaf-only compilation workflow (no local latexmk required).
